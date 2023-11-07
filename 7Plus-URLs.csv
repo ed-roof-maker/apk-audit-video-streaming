@@ -1,10 +1,10 @@
 Type,URL,Host,DNSSEC,TLS,VirusTotal
-APP,https://config-uat.sandbox.inferno.digital/,config-uat.sandbox.inferno.digital,-,TLS1.3,OK
+APP,https://config-uat.sandbox.inferno.digital/,config-uat.sandbox.inferno.digital,-,TLS1.0,OK
 APP,https://inferno-stub.herokuapp.com/config/remote/,inferno-stub.herokuapp.com,DNSSEC,TLS1.2,OK
-APP,https://config-staging.inferno.digital/,config-staging.inferno.digital,-,TLS1.3,OK
-APP,https://config.swm.digital/,config.swm.digital,-,TLS1.3,OK
-APP,https://config-testing.sandbox.inferno.digital/,config-testing.sandbox.inferno.digital,-,TLS1.3,OK
-APP,https://config-devtest.sandbox.inferno.digital/,config-devtest.sandbox.inferno.digital,-,TLS1.3,OK
+APP,https://config-staging.inferno.digital/,config-staging.inferno.digital,-,TLS1.0,OK
+APP,https://config.swm.digital/,config.swm.digital,-,TLS1.0,OK
+APP,https://config-testing.sandbox.inferno.digital/,config-testing.sandbox.inferno.digital,-,TLS1.0,OK
+APP,https://config-devtest.sandbox.inferno.digital/,config-devtest.sandbox.inferno.digital,-,TLS1.0,OK
 APP,http://10.0.2.2:4567/config/local/,NA,-,-,NA
 APP,,au1.gigya.com,-,-,OK
 APP,https://mcdk24jjpx196h2xh08js-12-r3m.device.marketingcloudapis.com/,mcdk24jjpx196h2xh08js-12-r3m.device.marketingcloudapis.com,-,TLS1.2,OK

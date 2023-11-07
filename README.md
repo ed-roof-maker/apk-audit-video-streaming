@@ -21,6 +21,8 @@ I only do this for fun in my spare time. I use a simple method in the below orde
 * Use virus total to check server usage type
 * Document and upload CSV to github
 
+If an endpoint supports old TLS1.0 or TLS1.1 then we mark it as TLS1.0. This enables web admins to blacklist these insecure endpoints so that sensitive data like passwords are not used within its tunnel.
+
 ## Example CSV Scrape
 ```
 cat 7Plus-URLs | grep AD, | cut -d , -f 3
@@ -28,7 +30,7 @@ cat 7Plus-URLs | grep AD, | cut -d , -f 3
 Get only ad hostnames for ad blocker curation.
 
 ```
-cat 7Plus-URLs | grep TLS1.2 | cut -d , f 3
+cat 7Plus-URLs | grep TLS1.0 | cut -d , f 3
 ```
 Get hostnames with old TLS because we are strict.
 
