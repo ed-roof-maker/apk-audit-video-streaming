@@ -25,12 +25,16 @@ If an endpoint supports old TLS1.0 or TLS1.1 then we mark it as TLS1.0. This ena
 
 ## Example CSV Scrape
 ```
-cat 7Plus-URLs | grep AD, | cut -d , -f 3
+cat <Appname>-URLs | grep AD, | cut -d , -f 3 | tail -n $(($(cat <Appname>-URLs.csv | wc -l) - 1 ))
 ```
 Get only ad hostnames for ad blocker curation.
 
 ```
-cat 7Plus-URLs | grep TLS1.0 | cut -d , f 3
+cat <Appname>-URLs | grep TLS1.0 | cut -d , f 3 | tail -n $(($(cat <Appname>-URLs.csv | wc -l) - 1 ))
 ```
 Get hostnames with old TLS because we are strict.
 
+## Example Multi Source Hosts File Deduplication
+```
+cat source1.csv source2.csv source2.csv | sort --unique > hosts-deduped
+```
